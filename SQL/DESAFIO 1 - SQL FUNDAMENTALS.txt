@@ -1,0 +1,53 @@
+
+--- DICAS: lista de procedimentos iniciais para uma função de Analytics --------------------------------
+01. Você é uma pessoa de Negócios que usa TI como Ferramenta. 
+	Entenda o Negócio, a TI é seu instrumento de trabalho.
+02. Faça um levantamento das principais tabelas do Banco de Dados.
+03. Em cada tabela, liste algumas linhas para examinar como os dados estão disponibilizados.
+04. Ao avaliar uma tabela, faça agrupamentos para entender os dados do ponto de vista do Negócio.
+05. Conte as Linhas, faça Médias, Min, Max e outros cálculos para ter um entendimento do Negócio.
+06. Faça seus primeiros Joins, buscando ter uma visão completa para um determinado cliente.
+07. Use um padrão de nomenclatura para facilitar a identificação de suas tabelas temporárias.
+	É comum termos que gerar várias tabelas temporárias para uma determinada atividade. 
+	Use nomes como TB_TMP_JOAO_VENDAS_01, TB_TMP_JOAO_VENDAS_02, TB_TMP_JOAO_VENDAS_03, etc,
+	Ou o nome da Cultura da Empresa.
+08. Sempre liste algumas linhas da tabela temporária que você gerou para ver se o resultado está correto.
+09. A cada tabela temporária gerada, utilize o Count para ver se ocorreu alguma duplicidade.
+10. Investigue sempre as duplicidades. Podem ou não ocorrer conforme o Negócio.
+11. Investigue sempre as duplicidades antes de um Join, para coompreender a Cardinalidade antes do cruzamento.
+12. Entenda o comportamento do passado para só depois buscar inferências futuras.
+13. Homologue o resultado final SEMPRE! Veja se está coerente com o resultado esperado.
+14. Guarde as tabelas temporárias (ou ao menos as últimas) até 2 dias após a entrega da demanda.
+15. Regularmente apague suas tabelas temporárias antigas para não sobrecarregar o Banco de Dados.
+16. Revise seus códigos, mantendo Comentários e Indentação. Precisamos deixar um Legado Profissional.
+
+
+
+--- Trabalho ---
+
+Utilizando as Tabelas passadas nas aulas, escreva programas SQL para atender às perguntas abaixo:
+
+-- TABELA DE FATURAMENTO
+1. Liste as 5 primeiras linhas da tabela de Faturamento.
+
+2. Qual o total, a média, a mediana, o valor mínimo e máximo de Faturamento da Tabela?
+
+3. MCC é a categoria de negócio da empresa (Supermercados, Turismo, Materiais de Construção, etc).
+	Qual o MCC de Maior e Menor Faturamento? E qual seu faturamento?
+
+4. Qual é a Agência de menor faturamento?
+
+5. Existe alguma Agência sem Adicionais no Faturamento? (1 para Titular; 2,3,4 para demais Adicionais)
+
+-- TABELA DE CADASTRO
+6. Retorne os nomes das cidades com MAIÚSCULO.
+
+7. Faça uma contagem do tipo Agrupamento por UF.
+
+8. Faça mais um Insert na base de Cadastro.
+
+9. Quantos clientes temos na base cadastro?
+
+10. Tem duplicidade de CPF na base de Cadastro?
+
+
